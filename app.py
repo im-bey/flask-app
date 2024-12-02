@@ -14,7 +14,7 @@ app = Flask(__name__)
 def home():
     return "Welcome to the Flask Application for Cover Letter Generator!"
 
-@app.route('/generate', methods=['POST'])
+@app.route('/api/letter', methods=['GET'])
 def generate():
     try:
         # Retrieve JSON data sent in the request
